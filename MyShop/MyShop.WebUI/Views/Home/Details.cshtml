@@ -30,7 +30,9 @@
             @Html.DisplayFor(model => model.Price) บาท
         </dd>
 
-        <dt></dt>
+        <dt>
+            <a href="@Url.Action("AddToBasket","Basket", new { Id=Model.Id })" class="btn btn-default">ใส่ลงในตะกร้าสินค้า</a>
+        </dt>
         <dd>
             @Html.ActionLink("Back to List", "Index")
         </dd>
